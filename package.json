@@ -35,7 +35,7 @@
     "turnilo": "./bin/turnilo"
   },
   "scripts": {
-    "prepare": "npm run build",
+    "postinstall": "npm run build",
     "test": "npm-run-all -s test:*",
     "watch:test": "npm-run-all -p watch:test:*",
     "test:common": "mocha --require ./test/setup/mocha.js src/common/**/*.mocha.{ts,tsx}",
